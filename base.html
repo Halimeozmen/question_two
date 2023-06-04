@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML CSS Register Form</title>
+    <link rel="stylesheet" href="test.css">
+  </head>
+  <body>
+    <form class="signup-form" action="/register" method="post">
+
+      <!-- form header -->
+      <div class="form-header">
+        <h1>Create Account</h1>
+      </div>
+
+      <!-- form body -->
+      <div class="form-body">
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="firstname" id="fname" class="label-title">First,Last name *</label>
+            <input type="text" id="firstname" class="form-input" placeholder="enter your first and last name" required="required" />
+          </div>
+          <div class="form-group right">
+            <label for="organazation" class="label-title">Organazation</label>
+            <input type="text" id="organazation" class="form-input" placeholder="enter your organazation" />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+   
+          
+        </div>
+
+        <!-- Passwrod and confirm password -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="email" class="label-title">Email*</label>
+            <input type="email" id="email" class="form-input" placeholder="enter your email" required="required">
+
+            <label for="" class="label-title">work phone *</label>
+            <input type="text" id="number" class="form-input" placeholder="enter your work phone" >
+
+             <label for="phone" class="label-title">Cell phone </label>
+            <input type="text" class="form-input"  placeholder="enter your cell phone " >
+
+            <label for="fax" class="label-title">Fax </label>
+            <input type="text" class="form-input" placeholder="enter your fax" >
+
+            <label for="city " class="label-title">City </label>
+            <input type="text" class="form-input"  placeholder="enter your city" >
+
+            <label for="cuntry" class="label-title">Cuntry * </label>
+            <input type="text" class="form-input"  placeholder="enter your cuntry" required="required" >
+             
+          </div>
+          <div class="form-group right">
+            <label for="confirm-password" class="label-title">Home phone </label>
+            <input type="text" class="form-input" id="confirm-password" placeholder="enter your home phone " >
+            <label for="confirm-password" class="label-title">Adress1: </label>
+            <input type="text" class="form-input" id="confirm-password" placeholder="enter your Adress 1 " required="required">
+
+            <label for="confirm-password" class="label-title">Adress2: </label>
+            <input type="text" class="form-input" id="confirm-password" placeholder="enter your Adress2" >
+
+            <label for="confirm-password" class="label-title">Zip postal code  </label>
+            <input type="text" class="form-input" id="confirm-password" placeholder="enter your postal code " >
+           
+          </div>
+        </div>
+
+    
+
+        <div class="horizontal-group">
+          <div class="form-group left" >
+            <label for="choose-file" class="label-title">* required field</label>
+            <input type="file" id="choose-file" size="20" >
+          </div>
+    
+        </div>
+
+      
+
+      <!-- form-footer -->
+      <div class="form-footer">
+        <span>* required</span>
+        <!--<button type="submit" class="btn">Create</button>-->
+        <button  id="message" onclick="myButton()">Learn More About the Course</button>
+      </div>
+
+    </form>
+
+    <!-- Script for range input label -->
+    <script>
+      var rangeLabel = document.getElementById("range-label");
+      var experience = document.getElementById("experience");
+
+      function change() {
+      rangeLabel.innerText = experience.value + "K";
+      }
+      function myButton(){
+    document.getElementById('message').innerText= " Congratulations !"+fname;
+}
+    </script>
+
+  </body>
+</html>
